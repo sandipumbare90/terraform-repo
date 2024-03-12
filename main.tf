@@ -8,6 +8,6 @@ terraform {
 }
 
 provider "google" {
-        project = devops-engineer-123
-        region = us-central1
+        project = "devops-engineer-123"
+        region = "us-central1"
 }

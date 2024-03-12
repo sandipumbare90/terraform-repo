@@ -3,7 +3,7 @@ resource "google_compute_instance" "terraform-instance" {
     machine_type = "f1-micro"
     zone = "us-central1-c"
     labels = {
-        demo = "evo"
+        sl = "evo"
 	dept = "erp"
        }
     boot_disk {

@@ -4,6 +4,7 @@ resource "google_compute_instance" "terraform-instance" {
     zone = "us-central1-c"
     labels = {
 	dept = "erp"
+	team = "gcp"
        }
     boot_disk {
       initialize_params{

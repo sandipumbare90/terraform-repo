@@ -2,13 +2,9 @@ resource "google_compute_instance" "terraform-instance" {
     name = "terraform-instance"
     machine_type = "f1-micro"
     zone = "us-central1-c"
-    labels = {
-	dept = "erp"
-	team = "gcp"
-       }
     boot_disk {
       initialize_params{
-      image = "debian-cloud/debian-11"
+      image = "ubuntu-os-cloud/ubuntu-2204-lts"
       }
     }
     network_interface {

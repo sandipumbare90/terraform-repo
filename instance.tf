@@ -1,5 +1,5 @@
 resource "google_compute_instance" "terraform-instance" {
-    name = "terraform-instance"
+    name = "jenkins-managed-node1"
     machine_type = "f1-micro"
     zone = "us-central1-c"
     labels = {

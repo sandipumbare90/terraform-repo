@@ -4,12 +4,12 @@ terraform {
       source = "hashicorp/google"
       version = "5.20.0"
          }
-    backend "gcs" {
+  }
+  backend "gcs" {
      bucket  = "gcs-bucket-for-tf-state-file"
      prefix  = "terraform/state"
      /*depends_on = "${google_storage_bucket.gcs-bucket-for-tf-state-file.name}"*/
       }
-  }
 }
 
 provider "google" {

@@ -6,7 +6,7 @@ terraform {
          }
   }
   backend "local" {
-     bucket  = "/home/jenkins/state/terraform.tfstate"
+     path = "/home/jenkins/state/terraform.tfstate"
       }
 }
 

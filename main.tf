@@ -5,10 +5,9 @@ terraform {
       version = "5.20.0"
          }
   }
-  /*backend "gcs" {
-     bucket  = "gcs-bucket-for-tf-state-file"
-     prefix  = "terraform/state"
-      }*/
+  backend "local{
+     bucket  = "/home/jenkins/state/terraform.tfstate"
+      }
 }
 
 provider "google" {

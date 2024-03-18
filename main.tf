@@ -5,9 +5,6 @@ terraform {
       version = "5.20.0"
          }
   }
-  backend "local" {
-     path = "/home/jenkins/state/terraform.tfstate"
-      }
 }
 
 provider "google" {

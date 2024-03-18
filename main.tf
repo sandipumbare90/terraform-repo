@@ -5,7 +5,7 @@ terraform {
       version = "5.20.0"
          }
   }
-  backend "local{
+  backend "local" {
      bucket  = "/home/jenkins/state/terraform.tfstate"
       }
 }

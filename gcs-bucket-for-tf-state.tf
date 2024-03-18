@@ -1,4 +1,4 @@
-resource "google_storage_bucket" "gcs-bucket-for-tf-state-file" {
+/*resource "google_storage_bucket" "gcs-bucket-for-tf-state-file" {
         name = "gcs-bucket-for-tf-state-file"
         location = "US"
         force_destroy = "true"
@@ -8,4 +8,4 @@ resource "google_storage_bucket" "gcs-bucket-for-tf-state-file" {
         versioning {
           enabled = true
    }
-}
+}*/

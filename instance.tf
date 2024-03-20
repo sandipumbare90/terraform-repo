@@ -1,9 +1,10 @@
 resource "google_compute_instance" "terraform-instance" {
     name = "jenkins-managed-node1"
-    machine_type = "f1-micro"
+    machine_type = "e2-medium"
     zone = "us-central1-c"
     labels = {
       dept = "it"
+      team = "gcp"
 	}
     boot_disk {
       initialize_params{

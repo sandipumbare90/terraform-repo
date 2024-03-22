@@ -33,5 +33,6 @@ resource "google_compute_disk" "disk-for-instance" {
 resource "google_compute_attached_disk" "default" {
     disk = google_compute_disk.disk-for-instance.name
     instance = google_compute_instance.terraform-instance.name
+    zone = "us-central1-c"
 }
 

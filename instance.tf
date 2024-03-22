@@ -19,3 +19,11 @@ resource "google_compute_instance" "terraform-instance" {
     }
  
 }
+
+resource "google_compute_disk" "disk-for-instance" {
+    name = "data-disk-1"
+    type = "pd-standard"
+    size = "10"
+    zone = "us-central1-c"
+    physical_block_size_bytes = "4096"
+}

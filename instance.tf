@@ -56,6 +56,7 @@ resource "google_compute_resource_policy" "my-first-compute-policy-for-snapshots
 resource "google_compute_disk_resource_policy_attachment" "my-first-disk-attachment-policy" {
      name = google_compute_resource_policy.my-first-compute-policy-for-snapshots.name
      disk = google_compute_disk.disk-for-instance.name
+     zone = "us-central1-c"
      
 
 }

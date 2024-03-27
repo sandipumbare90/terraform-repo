@@ -43,6 +43,12 @@ resource "google_compute_attached_disk" "default" {
     zone = "us-central1-c"
 }
 
+resource "google_compute_attached_disk" "default1" {
+    disk = google_compute_disk.disk-for-data-restore.name
+    instance = google_compute_instance.terraform-instance.name
+    zone = "us-central1-c"
+}
+
 resource "google_compute_resource_policy" "my-first-compute-policy-for-snapshots" {
     name = "my-first-compute-policy-for-snapshots"
     region = "us-central1"

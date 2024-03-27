@@ -29,6 +29,13 @@ resource "google_compute_disk" "disk-for-instance" {
     zone = "us-central1-c"
     physical_block_size_bytes = "4096"
 }
+resource "google_compute_disk" "disk-for-data-restore" {
+    name = "restore-data-disk"
+    type = "pd-standard"
+    zone = "us-central1-c"
+    physical_block_size_bytes = "4096"
+
+}
 
 resource "google_compute_attached_disk" "default" {
     disk = google_compute_disk.disk-for-instance.name

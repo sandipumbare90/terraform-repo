@@ -12,17 +12,20 @@ module "vpc" {
     subnet_name = "subnet-01"
     subnet_ip = "10.0.10.0/24"
     subnet_region = "us-central1"
+    network	= "my-vpc-01"
 
    },
    {
     subnet_name = "subnet-02"
     subnet_ip = "10.0.20.0/24"
     subnet_region = "us-central1"
+    network     = "my-vpc-01"
    }
   ]
   
   rules =[ {
     name        = "allow-ssh-fw"
+    network	= "my-vpc-01"
     direction   = "INGRESS"
     priority    = 1000
     ranges = ["0.0.0.0/0"]

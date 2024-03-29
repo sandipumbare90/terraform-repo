@@ -11,3 +11,4 @@ terraform {
     bucket = "gcs-bucket-for-backend-state-files"
     prefix = "terraform-1/state"
 }
+}

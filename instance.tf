@@ -4,7 +4,7 @@ resource google_compute_instance "my-first-instance" {
         machine_type = "e2-medium"
         zone = "us-central1-a"
         labels  = {
-          team = "gcp-team"
+          team = "gcp-teams"
 
          }
         boot_disk {
